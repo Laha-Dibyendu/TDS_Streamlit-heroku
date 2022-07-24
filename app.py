@@ -9,4 +9,9 @@ y = st.number_input('Enter another number')
 #     if x%2==0:st.write("your number is even")
 #     elif x%2!=0:st.write("your number is odd")
 # else:
-st.write("The sum of the two given numbers is :", x+y)
+#st.write("The sum of the two given numbers is :", x+y)
+p=x+y
+if (p).is_integer():
+    st.write("The sum of the two given numbers is :", p)
+else:
+    st.write("The sum of the two given numbers is :"+round(p,2)+" (rounded off upto 2 decimals)")
